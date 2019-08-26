@@ -16,7 +16,7 @@ function Characters({ history }) {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    dispatch(CharaceterActions.request(`?events=238&limit=50`));
+    dispatch(CharaceterActions.request());
   }, [dispatch]);
 
   async function fetchSearch(text) {
